@@ -69,11 +69,11 @@ void ASatellite::Tick( float DeltaTime )
 	SetActorLocation(CurrentLocation);
 	SetActorRotation(CurrentRotation);
 
-	// Print info	
-	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, FString::Printf(TEXT("Angular Velocity: %f, %f, %f"), AngularVelocity.X, AngularVelocity.Y, AngularVelocity.Z));
-	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, FString::Printf(TEXT("Velocity: %f, %f, %f"), Velocity.X, Velocity.Y, Velocity.Z));
-	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, FString::Printf(TEXT("Rotation: %f, %f, %f"), CurrentRotation.Roll, CurrentRotation.Pitch, CurrentRotation.Yaw));
-	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, FString::Printf(TEXT("Position: %f, %f, %f"), CurrentLocation.X, CurrentLocation.Y, CurrentLocation.Z));
-	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, FString::Printf(TEXT("***"), CurrentLocation.X, CurrentLocation.Y, CurrentLocation.Z));
+	// Print info	THAT WAS BEFORE THE HUD IMPLEMENTATION
+	//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, FString::Printf(TEXT("Angular Velocity: %f, %f, %f"), AngularVelocity.X, AngularVelocity.Y, AngularVelocity.Z));
+	//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, FString::Printf(TEXT("Velocity: %f, %f, %f"), Velocity.X, Velocity.Y, Velocity.Z));
+	//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, FString::Printf(TEXT("Rotation: %f, %f, %f"), CurrentRotation.Roll, CurrentRotation.Pitch, CurrentRotation.Yaw));
+	//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, FString::Printf(TEXT("Position: %f, %f, %f"), CurrentLocation.X, CurrentLocation.Y, CurrentLocation.Z));
+	//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, FString::Printf(TEXT("***"), CurrentLocation.X, CurrentLocation.Y, CurrentLocation.Z));
 	
 }	

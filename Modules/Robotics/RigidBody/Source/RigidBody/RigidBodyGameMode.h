@@ -12,8 +12,9 @@ UCLASS()
 class RIGIDBODY_API ARigidBodyGameMode : public AGameMode
 {
 	GENERATED_BODY()
-	
-	
+
+	// Load default parameters
+	ARigidBodyGameMode();
 	
 	
 };

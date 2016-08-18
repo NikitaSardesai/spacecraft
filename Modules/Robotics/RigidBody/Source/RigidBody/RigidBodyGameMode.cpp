@@ -2,7 +2,12 @@
 
 #include "RigidBody.h"
 #include "RigidBodyGameMode.h"
+#include "RigidBodyHUD.h"
 
 
-
+ARigidBodyGameMode::ARigidBodyGameMode()
+{
+	// Set default HUD
+	HUDClass = ARigidBodyHUD::StaticClass();
+}
 
